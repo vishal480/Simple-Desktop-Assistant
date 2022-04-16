@@ -85,7 +85,7 @@ if __name__=="__main__":
             try:
                 speak('what should i send?')
                 content=listenCommand()
-                to=''  #Add sender email
+                to=''  #Add reciever email
                 sendEmail(to,content)
                 speak('Email has been sent successfully')
             except Exception as e:
