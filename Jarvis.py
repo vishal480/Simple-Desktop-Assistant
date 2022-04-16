@@ -74,7 +74,7 @@ if __name__=="__main__":
         elif 'open youtube' in query:
             webbrowser.get('chrome').open('youtube.com')
         elif 'play music' in query:
-            s="C:\\Users\\Vishal Padala\\Music\\Playlists"
+            s=""  #Add path to your music app in these empty quotes
             music=os.listdir(s)
             # print(music[0][0])
             os.startfile(os.path.join(s,music[0]))
@@ -85,7 +85,7 @@ if __name__=="__main__":
             try:
                 speak('what should i send?')
                 content=listenCommand()
-                to='vishalpadala3@gmail.com'
+                to=''  #Add sender email
                 sendEmail(to,content)
                 speak('Email has been sent successfully')
             except Exception as e:
